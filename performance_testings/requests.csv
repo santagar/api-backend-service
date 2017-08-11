@@ -1,0 +1,4 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"POST","/api/v1/hotels",202,0,5900,6326,5596,17057,0,51.50
+"GET","/api/v1/hotels?page=0&size=10",372,0,5800,6383,5601,17141,1214,94.84
+"None","Total",574,0,5900,6363,5596,17141,787,146.34
