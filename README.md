@@ -1,4 +1,4 @@
-# Spring Boot "Microservice" Hotel Project
+# Spring Boot "Microservice"
 
 This is a sample Java / Maven / Spring Boot / Hazelcast application that can be used as a starter for creating a microservice complete with built-in health check, metrics and much more. I hope it helps you.
 
@@ -11,17 +11,17 @@ This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or 
 * You can build the project and run the tests by running ```mvn clean package```
 * Once successfully built, you can run the service by one of these two methods:
 ```
-        java -jar -Dspring.profiles.active=test target/spring-boot-hotel-1.0.0.war
+java -jar -Dspring.profiles.active=test target/spring-boot-hotel-1.0.0.war
 or
-        mvn spring-boot:run -Drun.arguments="spring.profiles.active=test"
+mvn spring-boot:run -Drun.arguments="spring.profiles.active=test"
 ```
 * Check the stdout to make sure no exceptions are thrown
 
 Once the application runs you should see something like this
 
 ```
-2017-05-01 18:24:58.870  INFO 10190 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090/http
-2017-05-01 18:24:58.872  INFO 10190 --- [           main] com.santagar.hotel.Application        : Started Application in 6.764 seconds (JVM running for 7.06)
+2017-05-01 18:24:58.870  INFO 10190 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer: Tomcat started on port(s): 8090/http
+2017-05-01 18:24:58.872  INFO 10190 --- [main] com.santagar.hotel.Application: Started Application in 6.764 seconds (JVM running for 7.06)
 ```
 
 
@@ -145,10 +145,10 @@ Here is what you would do to back the services with MySQL, for example:
 ### In pom.xml add: 
 
 ```
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
 ```
 
 ### Append this to the end of application.yml: 
@@ -176,9 +176,9 @@ hotel.service:
 ### Then run is using the 'mysql' profile:
 
 ```
-        java -jar -Dspring.profiles.active=mysql target/spring-boot-hotel-1.0.0.war
+java -jar -Dspring.profiles.active=mysql target/spring-boot-hotel-1.0.0.war
 or
-        mvn spring-boot:run -Drun.arguments="spring.profiles.active=mysql"
+mvn spring-boot:run -Drun.arguments="spring.profiles.active=mysql"
 ```
 
 # Attaching to the app remotely from your IDE
