@@ -1,3 +1,19 @@
+## Locust testing tool
+
+## Installation
+
+Visit [documentation](http://docs.locust.io/en/latest/installation.html).
+
+## Start Locust
+
+Run with the above Locust file, if it was named locustfile.py and located in the current working directory, we could run: 
+
+    locust -f locustfile.py
+    
+Once you’ve started Locust using one of the above command lines, you should open up a browser and point it to [http://127.0.0.1:8089](http://127.0.0.1:8089) (if you are running Locust locally)
+
+More info about starting [here](http://docs.locust.io/en/latest/quickstart.html).
+
 ### Use locust to know how many concurrent users can my application support
 
 ### Meaning of requests.csv
