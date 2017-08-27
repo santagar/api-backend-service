@@ -1,4 +1,6 @@
-## Locust testing tool
+## Use Locust to know how many concurrent users can my application support
+
+Locust is an easy-to-use, distributed, user load testing tool. It is intended for load-testing web sites (or other systems) and figuring out how many concurrent users a system can handle.
 
 ## Installation
 
@@ -13,8 +15,6 @@ Run with the above Locust file, if it was named locustfile.py and located in the
 Once you’ve started Locust using one of the above command lines, you should open up a browser and point it to [http://127.0.0.1:8089](http://127.0.0.1:8089) (if you are running Locust locally)
 
 More info about starting [here](http://docs.locust.io/en/latest/quickstart.html).
-
-### Use locust to know how many concurrent users can my application support
 
 ### Meaning of requests.csv
 
